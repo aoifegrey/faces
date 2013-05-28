@@ -24,7 +24,9 @@ Faces.mainPage = SC.Page.design({
         }),
         addButton: SC. ButtonView.design({
            layout: {centerY: 0, right: 12, height: 24, width:100},
-           title: 'Add Yourself'
+           title: 'Add Yourself',
+           target: 'Faces.peopleController',
+           action: 'addPerson'
         })
     }),
     mainView: SC.ScrollView.design({
@@ -34,7 +36,6 @@ Faces.mainPage = SC.Page.design({
             layout: {top: 10, left: 10, right: 10, bottom:10},
             rowHeight: 200,
             columnWidth: 200,
-            contentValueKey: 'company',
             contentBinding: 'Faces.peopleController.arrangedObjects',
             selectionBinding: 'Faced.peopleController.selection',
             exampleView: Faces.FaceView,
