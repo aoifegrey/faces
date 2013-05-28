@@ -21,6 +21,9 @@ Faces.main = function main() {
 
   // Step 2. Set the content property on your primary controller.
   // This will make your app come alive!
+  // 
+    var people = Faces.store.find(Faces.Person);
+    Faces.peopleController.set('content', people);
   //
   // ex.
   // var content = Faces.store.find(Faces.Group);
