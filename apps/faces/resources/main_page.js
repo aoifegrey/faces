@@ -36,7 +36,9 @@ Faces.mainPage = SC.Page.design({
             columnWidth: 200,
             contentValueKey: 'company',
             contentBinding: 'Faces.peopleController.arrangedObjects',
-            selectionBinding: 'Faced.peopleController.selection'
+            selectionBinding: 'Faced.peopleController.selection',
+            exampleView: Faces.FaceView,
+            classNames: ['face']
         })  
     })
   })
