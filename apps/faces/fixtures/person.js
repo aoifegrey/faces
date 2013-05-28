@@ -4,7 +4,7 @@
 // ==========================================================================
 /*globals Faces */
 
-sc_require('models/person_model');
+sc_require('models/person');
 
 Faces.Person.FIXTURES = [
 
